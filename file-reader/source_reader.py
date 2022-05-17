@@ -1,13 +1,11 @@
-#gets data from a specific CSV file
+#gets data from a CSV file
 
 import csv
 
-#Default watch folder routine
-
 
 def watchFile (fileName):
-    with open(fileName, 'r') as default_watchFile: #set default file to variable
-        csv_reader = csv.reader(default_watchFile) #read file to variable
+    with open(fileName, 'r') as curFile: #set file to variable
+        csv_reader = csv.reader(curFile) #read file to variable
         for csv_reader_line in csv_reader: #loop through csv
             print(csv_reader_line) #print to console for debugging
             read_list = [] #empty array
@@ -17,9 +15,8 @@ def watchFile (fileName):
                     read_list.append(item)
     return read_list
 
-
+#Set a file 
 fileName = 'E:\LocalRepository\Auto-Line-Printer\ALP_WatchFolder\SampleCSV.csv' #default file if nothing is passed to function
-
 read_list = watchFile(fileName)
 
 
