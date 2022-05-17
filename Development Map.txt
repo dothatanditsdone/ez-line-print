@@ -1,0 +1,18 @@
+Auto Line Printer takes a csv file and maps each value to a custom mapping (most commonly the number pad).
+There is a GUI that displays the current mapping configuration along with some basic settings.
+The user presses the appropriate key that is mapped to the desired value and the program prints that value to the user's desired location.
+
+Psudo
+
+1. Check watch folder for file.
+   1. Read file
+2. Else
+   1. Ask for file
+
+1. Read File.
+2. Each element gets assigned to a key (typically numberpad, will attempt to build support for alternatives, personally I use Logitech G-13 gaming pad)
+3. Elements that don't fit the number of alloted keys are accessed in increment/decrement keys (either additional key or modified key to increment/decrement by the # of alloted keys. For example, with the num pad, the '+' key will shift the elements assigned to keys up by one, a modified '+' key press will shift the elements up by 9)
+  3a. If a row of the CSV has less elements than alloted keys, program loads as many elements of the next line as possible.
+
+1. Draw GUI
+2.
