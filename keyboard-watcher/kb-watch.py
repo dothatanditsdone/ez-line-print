@@ -1,4 +1,5 @@
 from pynput import keyboard
+#(https://pynput.readthedocs.io/en/latest/keyboard.html)
 
 #active modifiers
 current = set()
@@ -6,7 +7,7 @@ current = set()
 #Hotkey Combinations
 COMBINATIONS = [
 {keyboard.KeyCode(vk=96)}, # Numpad 0
-{keyboard.KeyCode(vk=111)} #Numpad Divide
+{keyboard.KeyCode(vk=111)} # Numpad Divide
 ]
 
 
