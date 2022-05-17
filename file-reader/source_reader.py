@@ -18,7 +18,7 @@ def watchFile (fileName):
     return read_list
 
 
-fileName = 'E:\LocalRepository\Auto-Line-Printer\ALP_WatchFolder\SampleCSV.csv'
+fileName = 'E:\LocalRepository\Auto-Line-Printer\ALP_WatchFolder\SampleCSV.csv' #default file if nothing is passed to function
 
 read_list = watchFile(fileName)
 
