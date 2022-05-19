@@ -16,7 +16,7 @@ def watchFile (fileLoc):
     return read_list
 
 # Set a file to be the default in case no file location is passed to the function
-fileLoc = 'E:\LocalRepository\Auto-Line-Printer\ex-line-print\ALP_WatchFolder\SampleCSV.csv' #default file if nothing is passed to function
+fileLoc = 'E:\LocalRepository\Auto-Line-Printer\ez-line-print\ALP_WatchFolder\SampleCSV.csv' #default file if nothing is passed to function
 read_list = watchFile(fileLoc)
 
 
